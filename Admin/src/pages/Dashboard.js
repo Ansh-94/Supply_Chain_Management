@@ -34,7 +34,7 @@ const columns = [
   },
   {
     title: "Status",
-    dataIndex: "staus",
+    dataIndex: "status",
   },
 ];
 
@@ -111,7 +111,7 @@ const Dashboard = () => {
         product: orderState[i].orderItems?.length,
         price: orderState[i]?.totalPrice,
         dprice: orderState[i]?.totalPriceAfterDiscount,
-        staus: orderState[i]?.orderStatus,
+        status: orderState[i]?.orderStatus,
       });
     }
     setOrderData(data1);
